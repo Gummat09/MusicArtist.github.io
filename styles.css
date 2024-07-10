@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+    --accent: #38214A;
+    
+}
+
+body {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 2.225em;
+    color: #38214A;
+}
+
+a {
+    text-decoration: none;
+    color: #38214A;
+}
+
+.logo--placeholder {
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.nav--holder {
+    padding: 50px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav--holder > .list-item--holder {
+    list-style-type: none;
+    display: flex;
+}
+
+.list-item--holder > li a{
+    font-size: 1.125em;
+    font-weight: 600;
+    padding: 0 24px;
+    color: var(--accent);
+}
+
+.list-item--holder > li > a:hover {
+    cursor: pointer;
+    color: #38214a79;
+}
+
+.hero--image {
+  min-height: 90vh;
+  background: url(./img/pexels-torsten-dettlaff-347700.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.hero--header, .hero--description, .buttons {
+    max-width: 1145px;
+    margin: auto;
+    z-index: 1000;
+}
+
+.overlay--hero {
+    max-width: 100%;
+    min-height: 90vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.175);
+
+    position: relative;
+}
+
+
+.hero--header {
+    font-size: 4.125em;
+    padding-top: 1.7em;
+    padding-right: 7.8em;
+    line-height: 72px;
+}
+
+.hero--description {
+    font-size: 1.1em;
+    line-height: 24px;
+    padding: 16px 0;
+    padding-right: 40em;
+
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 16px 32px;
+    border: 0.5px solid #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1.05em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--accent);
+    transition: all ease-in-out 200ms;
+}
+
+.btn--2 {
+    margin-left: 16px;
+    border: 0.5px solid #fff;
+    background-color: #ffffff00;
+    color: #fff;
+}
+
+.btn--2:hover {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.btn--1:hover {
+    border: 0.5px solid #fff;
+    background-color: #ffffff00;
+    color: #fff;
+}
+
+.music--connect {
+    position: absolute;
+    bottom: 10%;
+    left: 65%;
+    display: flex;
+}
+
+.music--icon {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    transition: all ease-in-out 200ms;
+}
+
+.music--icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.music--icon > span {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.music--icon img{
+    width: 60px;
+    color: #fff;
+}
+
+.follow--us {
+    position: absolute;
+    bottom: 12.5%;
+    color: #fff;
+    margin-left: 215px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.follow--us .follow--text {
+    font-size: 1.1em;
+    padding-left: 8px;
+}
+
+.follow--us i {
+    font-size: 24px;
+    padding-left: 8px;
+    margin-left: 8px;
+    transition: all ease-in-out 200ms;
+}
+
+.follow--us i:hover {
+    transform: scale(1.125);
+    cursor: pointer;
+}
+
+.section {
+    padding: 100px 200px;
+    min-height: 40vh;
+}
+
+.section--1, .section--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5em;
+}
+
+.section--header {
+    margin: 8px 0;
+    margin-top: 104px;
+}
+
+.section-text--container, .section-text--container-2 {
+    padding-left: 40px;
+}
+
+.section--text {
+    padding-top: 16px;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 32px;
+    color: #38214ad0;
+
+}
+ .fa-solid {
+    padding-left: 8px;
+    line-height: 20px;
+ }
+.btn--about, .btn--more {
+    margin-top: 16px;
+    border: 0.5px solid #38214A;
+    background-color: #fff;
+}
+
+.btn--about:hover, .btn--more:hover, .send--email:hover {
+    background-color: #38214A;
+    color: #fff;
+}
+
+.grid--placeholder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    
+    
+}
+
+.img--placeholder {
+    border-radius: 5%; 
+}
+
+.image--1 {
+    background: url(./img/pexels-wendy-wei-4142346.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.image--2 {
+    background: url(./img/pexels-brett-sayles-4143428.jpg);
+    background-size: cover;
+    background-position: center;
+
+    transform: translateY(-5%);
+
+}
+.image--3 {
+    background: url(./img/pexels-darya-sannikova-3824763.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.image--4 {
+    background: url(./img/63297b1d49e84f9219202874_austin-neill\ .webp);
+    background-size: cover;
+    background-position: center;
+    transform: translateY(-5%);
+}
+.image--5 {
+    height: 100%;
+    background: url(./img/pexels-dương-hoàng-1550469.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.section--header-2{
+    margin-top: 24px;
+}
+
+.section-text--container-2 {
+    padding: 0;
+}
+
+.subtle--text {
+    font-weight: 500;
+    color: #38214a98;
+}
+
+.event--buttons > .btn {
+    font-size: 0.85em;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.btn--ticket {
+    background-color: #38214A;
+    color: #fff;
+}
+
+.btn--ticket:hover, .buy--merch:hover {
+    border: 0.5px solid #38214A;
+    background-color: #fff;
+    color: #38214A;
+}
+
+.btn--Info:hover {
+    background-color: #38214A;
+    color: #fff;
+}
+
+.event--info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 32px;
+    border-bottom: 0.5px solid #38214a98;
+}
+
+.event--info > .left-side > .event--name {
+    width: 300px;
+    word-wrap: break-word;
+    font-size: 1.5em;
+}
+.event--info > .left-side > .event--address {
+    font-size: 0.8em;
+    color: #38214a98;
+}
+
+.section--3, .slider--container, .section--7 {
+    background-color: #f8ecf679;
+}
+
+.section-3--header {
+    text-align: center;
+}
+
+.subtitle--text {
+    text-align: center;
+    font-size: 1.125em;
+    padding: 16px 0;
+    font-weight: 400;
+    color: #38214ab6;
+    line-height: 28px;
+    word-spacing: 0.125rem;
+
+}
+
+.section--3 > .grid--container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 300px;
+    column-gap: 1.2em;}
+
+.grid--container > .grid--item {
+    margin-top: 32px;
+    position: relative;
+    border-radius: 10%;
+    transition: all ease-in-out 200ms;
+}
+
+.grid--container > .grid--item:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.grid--container > .image--1 {
+    background-image: url(./img/pexels-alexander-dummer-134469.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid--container > .image--2 {
+    background-image: url(./img/pexels-barthy-bonhomme-185030.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: translateY(0);
+}
+.grid--container > .image--3 {
+    background-image: url(./img/Forest.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid--container > .image--4 {
+    background-image: url(./img/Studio.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: translateY(0);
+}
+
+.grid--item > p {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #38214A;
+}
+
+.slider--container {
+    padding: 2em;
+    padding-bottom: 80px;
+}
+
+.slider--wrapper {
+    position: relative;
+    max-width: 40em;
+    margin: 0 auto;
+
+}
+
+.slideshow {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 5%;
+    overflow-x: hidden;
+}
+
+.slideshow > img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider--container > .subtitle--text {
+    padding-bottom: 24px;
+}
+
+.slider--nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    
+}
+
+.slider--tag{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease-in-out 200ms;
+}
+
+.slider--tag:hover {
+    opacity: 1;
+}
+
+.section--5 {
+    min-height: 300px;
+    padding-bottom: 80px;
+}
+
+.section--header {
+    margin-top: 0;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.gridContent--container {
+    max-width: 120rem;
+    padding: 2rem;
+}
+
+.grid--holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    height: 632px;
+    
+}
+
+.item {
+    padding: 24px 0;
+}
+
+.image--holder {
+    height: 20rem;
+    margin-bottom: 16px;
+}
+
+.news--title {
+    line-height: 24px;
+    padding-bottom: 16px;
+}
+.news--description {
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.item > .image-1 {
+    background-image: url(./img/marvin-meyer-IB5bld_weak-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item > .image-2 {
+    background-image: url(https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.item > .image-3 {
+    background-image: url(https://images.unsplash.com/photo-1538819137474-ffa0ee381af6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.item > .image-4 {
+    background-image: url(https://plus.unsplash.com/premium_photo-1661255393384-1fd8f82163c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.item > .image-5 {
+    background-image: url(https://images.unsplash.com/photo-1562369083-4ff96958f868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1184&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.section--6 {
+    background-image: url(./img/Background\ Picture.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 296px;
+    text-align: center;
+}
+
+.section--6 > .header--title {
+    color: #fff;
+    padding-bottom: 24px;
+}
+
+.email--input {
+   color: #fff;
+   padding: 20px 32px;
+   outline: none;
+   font-size: 1.025rem;
+   margin-right: 8px;
+   border: 1px solid #fff;
+   background-color: #38214A;
+   border-radius: 32px;
+}
+
+::placeholder { 
+    color: #fff;
+    opacity: 1;
+  }
+
+.send--email {
+    margin-left: 8px;
+    background-color: #fff;
+    font-weight: 600; 
+}
+
+.gd--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4em;
+}
+
+.image--placeholder {
+    position: relative;
+}
+
+.gd--container > .image--placeholder > .image {
+    background-image: url(https://images.pexels.com/photos/1868566/pexels-photo-1868566.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    border-radius: 20px;
+}
+
+.gd--container > .image--placeholder > .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+    max-width: 35em;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 20px;
+    transform: translate(10%, -50%);
+    box-shadow: 0px 959px 384px rgba(0, 0, 0, 0.01), 0px 540px 324px rgba(0, 0, 0, 0.05), 0px 240px 240px rgba(0, 0, 0, 0.09), 0px 60px 132px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.merch--name {
+    font-size: 1.8em;
+    color: #38214A;
+    font-weight: 500;
+}
+
+.merch--price {
+    font-size: 1.35em;
+    padding: 4px 0;
+    color: #858282;
+}
+
+.buy--merch {
+    background-color: #38214A;
+    color: #fff;
+    padding-block: 12px;
+    margin: 0;
+}
+
+.section--7 {
+    padding-bottom: 24px;
+}
+.section--7  .section--text .text--header {
+    padding: 16px 0;
+}
+.section--7  .section--text .text--description {
+    padding: 16px 0;
+}
+
+.btn--merch {
+    margin-top: 24px;
+    padding-block: 14px;
+    background-color: #38214A;
+    color: #fff;
+
+}
+
+.btn--merch:hover {
+    background-color: #fff;
+    border: 0.5px solid #38214A;
+    color: #38214A;
+}
+
+.footer--container {
+    min-height: 10vh;
+    padding: 40px 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer--container > .list-item--holder {
+    list-style-type: none;
+    display: inherit;
+    flex-direction: row;
+}
+
+.footerfollow--us {
+    display: flex;
+    align-items: center;
+}
+
+.footerfollow--us > i {
+    font-size: 24px;
+    padding-left: 16px;
+    align-items: center;
+    color: #38214A;
+}
+.below--footer {
+    margin-top: -30px;
+    padding: 20px 0 40px 0;
+    
+    text-align: center;
+    line-height: 28px;
+    font-size: 1.125em;
+    color: #525252;
+
+}
+
